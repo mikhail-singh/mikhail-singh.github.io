@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mikhail's Portfolio</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="./styles.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="content">
+      <header>
+        <nav class="navbar" id="navbar">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#accomplishments">Accomplishments</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <a
+                href="javascript:void(0);"
+                class="icon"
+                onclick="openMenu()"
+                aria-label="Menu"
+              >
+                <i class="fa fa-bars"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- About Section -->
+      <div id="aboutSection" class="about-section">
+        <div class="left">
+          <div class="left-content">
+            <h1>Mikhail Singh.</h1>
+            <h3 id="about">About Me</h3>
+            <p>
+              I am an iPhD student at <em>WSU</em> and <em>CSIRO</em>, currently
+              researching <strong>energy efficiency</strong> in architecture.
+            </p>
+          </div>
+        </div>
+        <div class="right">
+          <figure>
+            <a
+              href="https://www.linkedin.com/in/mikhail-s-640721110/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="myimage.jpg"
+                width="200"
+                height="200"
+                alt="Profile picture"
+                class="pfp"
+              />
+            </a>
+          </figure>
+        </div>
+      </div>
+      <br />
+
+      <!-- Skills Section-->
+      <div class="skills-section">
+        <h2 id="skills">Skills.</h2>
+        <h3>Research Skills</h3>
+        <ul>
+          <li>Report Writing</li>
+          <li>Data Collection</li>
+          <li>Planning and Scheduling</li>
+          <li>Analysis of information from different sources</li>
+        </ul>
+        <h3>Technical Skills</h3>
+        <ul>
+          <li>Programming</li>
+          <li>3D Modelling</li>
+          <li>3D Printing</li>
+          <li>LiDAR Scanning</li>
+          <li>Software proficiency</li>
+          <li>Project management</li>
+        </ul>
+        <h3>Interpersonal Skills</h3>
+        <ul>
+          <li>Active listening</li>
+          <li>Teamwork</li>
+          <li>Responsibility</li>
+          <li>Leadership</li>
+        </ul>
+      </div>
+
+      <!-- Accomplishments Section -->
+      <div id="accomplishmentsSection" class="accomplishments-section">
+        <h2 id="accomplishments">Accomplishments.</h2>
+        <table>
+          <tr>
+            <th scope="col">Publications</th>
+            <th scope="col">Awards</th>
+            <th scope="col">Presentations</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>7</td>
+            <td>1</td>
+          </tr>
+        </table>
+      </div>
+
+      <!-- Contact Section -->
+      <div id="contactSection" class="contact-section">
+        <h2 id="contact">Contact.</h2>
+        <a
+          href="https://www.linkedin.com/in/mikhail-s-640721110/"
+          target="_blank"
+          >LinkedIn</a
+        >
+        <br /><br />
+
+        <!-- Form  -->
+        <form action="/submit" method="post">
+          <label for="name">First Name</label>
+          <br />
+          <input
+            name="name"
+            type="text"
+            value="Your Name..."
+            aria-label="Name Input"
+          />
+          <br /><br />
+          <label for="email">Email</label>
+          <br />
+          <input
+            name="email"
+            type="email"
+            value="Your Email..."
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            aria-label="Email Input"
+          />
+          <br /><br />
+          <label for="mobile">Mobile (optional):</label>
+          <br />
+          <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10,16}" />
+          <br /><br />
+          <label for="message">Leave your message below:</label>
+          <br />
+          <textarea id="message" name="message" rows="5" cols="30"></textarea>
+          <br /><br />
+          <input type="submit" />
+        </form>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
